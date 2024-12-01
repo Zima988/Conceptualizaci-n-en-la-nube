@@ -525,64 +525,74 @@ body, html {
         showSlide((currentSlide + 1) % slides.length);
     }, 5000);
 </script>
-<!-- Galería de imágenes con superposición de texto -->
-
-<div class="gallery-section"><div class="gallery-carousel-container">
-       <div class="gallery-carousel-container">
-        <div class="carousel-track" id="gallery-carousel-track">
-<div class="gallery-item" onclick="showOverlay(this)"> 
-      <img src="EPIC-UAM/1- Fotos Historicas de la Laguna/0FHL.jpeg" alt="Imagen 1">
-      <div class="overlay"><h3>Fotos Historicas de la Laguna</h3> <p></p><a href="Seccion1.php">+</a></div>
+<center>
+<br>
+    <div>
+        <form action="buscar.php" method="post">
+            <input type="text" name="buscar" id="">
+            <input type="submit" value="Buscar">
+            <a href="nuevo.php">Añadir Nuevo</a>
+        </form>
     </div>
-    
-    <div class="gallery-item" onclick="showOverlay(this)"> 
-      <img src="EPIC-UAM/2- 31 de agosto 2023/PORTADA31A.jpg" alt="Imagen 2">
-      <div class="overlay"><h3>31 Agosto (2023)</h3> <p></p><a href="Seccion2.php">+</a></div>
+    <br>
+    <div>
+        <table border="1">
+            <tr>
+                <td>ID</td>
+                <td>NOMBRES</td>
+                <td>APELLIDOS</td>
+                <td>NOTA1</td>
+                <td>NOTA2</td>
+                <td>NOTA3</td>
+                <td>PROMEDIO</td>
+                <td>ESTADO</td>
+            </tr>
+            <?php
+                $cnx = mysqli_connect("localhost", "root", "root123456", "dbprueba");
+                $sql = "SELECT id, nom, ape, n1, n2, n3, ROUND((n1+n2+n3)/3, 1) as p
+                        FROM talumno
+                        
+                        order by p desc";
+                $rta = mysqli_query($cnx, $sql);
+                while ($mostrar = mysqli_fetch_row($rta)) {
+                    ?>
+                    <tr>
+                        <td><?php echo $mostrar[0] ?></td>
+                        <td><?php echo $mostrar[1] ?></td>
+                        <td><?php echo $mostrar[2] ?></td>
+                        <td><?php echo $mostrar[3] ?></td>
+                        <td><?php echo $mostrar[4] ?></td>
+                        <td><?php echo $mostrar[5] ?></td>
+                        <td><?php echo $mostrar[6] ?></td>
+                        <td>
+                            <?php 
+                                if ($mostrar[6] >= 13) {
+                                    echo "Aprobado";
+                                }
+                                else {
+                                    echo "Desaprobado";
+                                }
+                            ?>
+                        
+                        </td>
+                        <td>
+                            <a href="editar.php?
+                            id=<?php echo $mostrar[0] ?> &
+                            nom=<?php echo $mostrar[1] ?> &
+                            ape=<?php echo $mostrar[2] ?> &
+                            n1=<?php echo $mostrar[3] ?> &
+                            n2=<?php echo $mostrar[4] ?> &
+                            n3=<?php echo $mostrar[5] ?>
+                            ">Editar</a>
+                            <a href="speliminar.php? id=<?php echo $mostrar[0] ?>">Eliminar</a>
+                        </td>
+                    </tr>
+                <?php
+                }
+                ?>
+        </table>
     </div>
-    
-    <div class="gallery-item" onclick="showOverlay(this)"> 
-      <img src="EPIC-UAM/3- 5 de Diciembre 2023/5DPORTADA.jpg" alt="Imagen 3">
-      <div class="overlay"><h3>5 Diciembre (2023)</h3> <p></p><a href="Seccion3.php">+</a></div>
-    </div>
-    
-    <div class="gallery-item" onclick="showOverlay(this)"> 
-      <img src="EPIC-UAM/4- Coloquio de Resultados (19 de febrero)/PORTADACOL.jpeg" alt="Imagen 4">
-      <div class="overlay"><h3>Coloquio de Resultados(19 de febrero)</h3> <p></p><a href="Seccion4.php">+</a></div>
-    </div>
-    
-    <div class="gallery-item" onclick="showOverlay(this)"> 
-      <img src="EPIC-UAM/5- 28 de Febrero/PORTADA28F.png" alt="Imagen 5">
-      <div class="overlay"><h3>28 Febrero (2024)</h3><p></p><a href="Seccion5.php">+</a></div>
-    </div>
-    
-    
-    <div class="gallery-item" onclick="showOverlay(this)"> 
-      <img src="EPIC-UAM/7- 14 de Marzo 2024/PORTADA14M.jpg" alt="Imagen 7">
-      <div class="overlay"><h3>14 Marzo (2024)</h3><a href="Seccion7.php">+</a></div>
-    </div>
- 
-  <div class="gallery-item" onclick="showOverlay(this)"> 
-      <img src="EPIC-UAM/8- 23 de Julio/PORTADA23J.jpg" alt="Imagen 8">
-      <div class="overlay"><h3>23 Julio (2024)</h3><a href="Seccion8.php">+</a></div>
-    </div>
-    
-     <div class="gallery-item" onclick="showOverlay(this)"> 
-      <img src="EPIC-UAM/9- Preparacion y Concurso Espacio Social (25 de septiembre)/Portada Seccion ES.jpg" alt="Imagen 9">
-      <div class="overlay"><h3>Preparacion y Concurso Espacio Social (25 de septiembre)</h3><a href="Seccion9.php">+</a></div>
-    </div>
-    
-  
-</div></div>
-      <div class="gallery-nav-arrow left" onclick="moveGallery(-1)">&#10094;</div>
-        <div class="gallery-nav-arrow right" onclick="moveGallery(1)">&#10095;</div>
-    </div>
-</div>
-</script>
-
-
-       
-    </div>
-</div>
+    </center>
 
 <script>
     const galleryTrack = document.getElementById('gallery-carousel-track');
