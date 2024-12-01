@@ -30,7 +30,7 @@
                 <td>ESTADO</td>
             </tr>
             <?php
-                $cnx = mysqli_connect("conceptualizaci-n-en-la-nube-production.up.railway.app", "root", "root123456", "dbprueba");
+                $cnx = mysqli_connect("localhost", "root", "root123456", "dbprueba");
                 $sql = "SELECT id, nom, ape, n1, n2, n3, ROUND((n1+n2+n3)/3, 1) as p
                         FROM talumno
                         
