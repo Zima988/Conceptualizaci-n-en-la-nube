@@ -396,136 +396,7 @@ body, html {
 
 <body>
 
-    <!-- Contenedor de logos -->
-    <div class="logos-container">
-        <img src="img/50anosUAMlogo.png" alt="Logo 1">
-        <a href="https://www.epicn.org/stories/universidad-autonoma-metropolitana/" target="_blank"><img src="img/Epiclogo.png" alt="Logo 2"></a>
-    </div>
-
-    <!-- Carrusel de fondo sin miniaturas -->
-    <div class="background-carousel">
-        <!-- Diapositiva 1 -->
-        <div class="carousel-slide active" style="background-image: url('EPIC-UAM/0-Situacion Actual de la Laguna La Piedad/0SAL1.jpg');">
-            <div class="carousel-content">
-                <h1>UAM-EPIC</h1>
-                <p>Rescate de la <span class="highlight">Laguna La Piedad</span></p>
-             <p> Rescuing<span class="highlight">   La Piedad Lagoon</p>
-              
-              <div class="button-container">
-        <a href="Mas.php" class="custom-button button-mas">Más</a>
-        <a href="Acerca_de.php" class="custom-button button-acerca">Acerca de</a>
-        <a href="Flyers.php" class="custom-button button-flayers">Flyers</a>
-        <a href="Conocenos.php" class="custom-button button-conocenos">Conócenos</a>
-        <a href="Documentales.php" class="custom-button button-documentales">Documentales</a>
-        <a href="Medios de difusion.php" class="custom-button button-difusion">Medios de difusión</a>
-    </div>
-            </div>
-        </div>
-        
-        <!-- Diapositiva 2 -->
-        <div class="carousel-slide" style="background-image: url('EPIC-UAM/0-Situacion Actual de la Laguna La Piedad/0SAL2.jpg');">
-            <div class="carousel-content">
-                <h1>UAM-EPIC</h1>
-                <p>Rescate de la <span class="highlight">Laguna La Piedad</span></p>
-                <p> Rescuing<span class="highlight">   La Piedad Lagoon</p>
-                        <div class="button-container">
-        <a href="Mas.php" class="custom-button button-mas">Más</a>
-        <a href="Acerca_de.php" class="custom-button button-acerca">Acerca de</a>
-        <a href="Flyers.php" class="custom-button button-flayers">Flyers</a>
-        <a href="Conocenos.php" class="custom-button button-conocenos">Conócenos</a>
-        <a href="Documentales.php" class="custom-button button-documentales">Documentales</a>
-        <a href="Medios de difusion.php" class="custom-button button-difusion">Medios de difusión</a>
-    </div>
-            </div>
-        </div>
-  <!-- Diapositiva 3 -->
-        <div class="carousel-slide" style="background-image: url('EPIC-UAM/0-Situacion Actual de la Laguna La Piedad/0SAL3.jpg');">
-            <div class="carousel-content">
-                <h1>UAM-EPIC</h1>
-                <p>Rescate de la <span class="highlight">Laguna La Piedad</span></p>
-                  <p> Rescuing<span class="highlight">   La Piedad Lagoon</p>
-                         <div class="button-container">
-        <a href="Mas.php" class="custom-button button-mas">Más</a>
-        <a href="Acerca_de.php" class="custom-button button-acerca">Acerca de</a>
-        <a href="Flyers.php" class="custom-button button-flayers">Flyers</a>
-        <a href="Conocenos.php" class="custom-button button-conocenos">Conócenos</a>
-        <a href="Documentales.php" class="custom-button button-documentales">Documentales</a>
-        <a href="Medios de difusion.php" class="custom-button button-difusion">Medios de difusión</a>
-    </div>
- 
-</div>
-  
-       
-        </div>
-          <!-- Diapositiva 4 -->
-        <div class="carousel-slide" style="background-image: url('EPIC-UAM/0-Situacion Actual de la Laguna La Piedad/0SAL4.jpg');">
-            <div class="carousel-content">
-                <h1>UAM-EPIC</h1>
-                <p>Rescate de la <span class="highlight">Laguna La Piedad</span></p>
-              <p> Rescuing<span class="highlight">   La Piedad Lagoon</p>
-                           <div class="button-container">
-        <a href="Mas.php" class="custom-button button-mas">Más</a>
-        <a href="Acerca_de.php" class="custom-button button-acerca">Acerca de</a>
-        <a href="Flyers.php" class="custom-button button-flayers">Flyers</a>
-        <a href="Conocenos.php" class="custom-button button-conocenos">Conócenos</a>
-        <a href="Documentales.php" class="custom-button button-documentales">Documentales</a>
-        <a href="Medios de difusion.php" class="custom-button button-difusion">Medios de difusión</a>
-    </div>
-  </div>
-        </div>
-          <!-- Diapositiva 5 -->
-        <div class="carousel-slide" style="background-image: url('EPIC-UAM/0-Situacion Actual de la Laguna La Piedad/0SAL5.JPG');">
-            <div class="carousel-content">
-                <h1>UAM-EPIC</h1>
-                <p>Rescate de la <span class="highlight">Laguna La Piedad</span></p>
-               <p> Rescuing<span class="highlight">   La Piedad Lagoon</p>
-                   <div class="button-container">
-        <a href="Mas.php" class="custom-button button-mas">Más</a>
-        <a href="Acerca_de.php" class="custom-button button-acerca">Acerca de</a>
-        <a href="Flyers.php" class="custom-button button-flayers">Flyers</a>
-        <a href="Conocenos.php" class="custom-button button-conocenos">Conócenos</a>
-        <a href="Documentales.php" class="custom-button button-documentales">Documentales</a>
-        <a href="Medios de difusion.php" class="custom-button button-difusion">Medios de difusión</a>
-    </div>
-</div>
-        </div>
-           <!-- Diapositiva 6 -->
-        <div class="carousel-slide" style="background-image: url('EPIC-UAM/0-Situacion Actual de la Laguna La Piedad/0SAL6.jpg');">
-            <div class="carousel-content">
-                <h1>UAM-EPIC</h1>
-                <p>Rescate de la <span class="highlight">Laguna La Piedad</span></p>
-               <p> Rescuing<span class="highlight">   La Piedad Lagoon</p>
-                 <div class="button-container">
-        <a href="Mas.php" class="custom-button button-mas">Más</a>
-        <a href="Acerca_de.php" class="custom-button button-acerca">Acerca de</a>
-        <a href="Flyers.php" class="custom-button button-flayers">Flyers</a>
-        <a href="Conocenos.php" class="custom-button button-conocenos">Conócenos</a>
-        <a href="Documentales.php" class="custom-button button-documentales">Documentales</a>
-        <a href="Medios de difusion.php" class="custom-button button-difusion">Medios de difusión</a>
-    </div>
- 
-
-  </div>
-            </div>
-        </div>
-        <!-- Agrega más diapositivas según sea necesario -->
-    </div>
-
-    <script>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.carousel-slide');
-
-    function showSlide(index) {
-        slides[currentSlide].classList.remove('active');
-        currentSlide = index;
-        slides[currentSlide].classList.add('active');
-    }
-
-    setInterval(() => {
-        showSlide((currentSlide + 1) % slides.length);
-    }, 5000);
-</script>
-<center>
+  <center>
 <br>
     <div>
         <form action="buscar.php" method="post">
@@ -593,6 +464,26 @@ body, html {
         </table>
     </div>
     </center>
+            </div>
+        </div>
+        <!-- Agrega más diapositivas según sea necesario -->
+    </div>
+
+    <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+
+    function showSlide(index) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = index;
+        slides[currentSlide].classList.add('active');
+    }
+
+    setInterval(() => {
+        showSlide((currentSlide + 1) % slides.length);
+    }, 5000);
+</script>
+
 
 <script>
     const galleryTrack = document.getElementById('gallery-carousel-track');
